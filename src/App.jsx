@@ -13,9 +13,9 @@ const App = () => {
 
   return (
     <>
-      <img className='absolute top-0 right-0 opacity-60 -z-1' src={`${import.meta.env.BASE_URL}gradient.png`} alt="Gradient-png" />
+      {/* <img className='absolute top-0 right-0 opacity-60 -z-1' src="/gradient.png" alt="Gradient-png" />
 
-      <div className='h-0 w-[40rem] absolute to-[20%] right-[-5%] shadow-[0_0_900px_20px_#A8DADC] -rotate-[30deg] -z-10'></div>
+      <div className='h-0 w-[40rem] absolute to-[20%] right-[-5%] shadow-[0_0_900px_20px_#A8DADC] -rotate-[30deg] -z-10'></div> */}
       <Header />
     
       <Hero />
