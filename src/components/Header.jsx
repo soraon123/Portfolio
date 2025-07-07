@@ -93,24 +93,24 @@ after:bg-[#A8DADC] after:transition-all after:duration-500"
       </button>
 
       {/* Mobile Menu */}
-      <div ref={mobileRef}
-        id="mobilemenu"
-        className="hidden fixed top-16 left-0 right-0 bottom-0 bg-black/70 backdrop-blur-md z-40 p-5 md:hidden"
-      >
-        <nav className="flex flex-col items-center gap-6">
-          {['Home', 'About', 'Resume', 'Projects', 'Contact'].map((section, i) => (
-            <Link
-              smooth
-              to={`/#${section}`}
-              key={section}
-              onClick={closeMenu}
-              className="text-base text-white transition-colors hover:text-[#A8DADC]"
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          ))}
-        </nav>
-      </div>
+<div
+  ref={mobileRef}
+  id="mobilemenu"
+  className="hidden fixed top-0 left-0 w-full h-screen bg-black/80 backdrop-blur-md z-40 p-8 md:hidden flex flex-col items-center justify-center gap-6"
+>
+  {['Home', 'About', 'Resume', 'Projects', 'Contact'].map((section, i) => (
+    <Link
+      smooth
+      to={`/#${section.toLowerCase()}`}
+      key={section}
+      onClick={closeMenu}
+      className="text-xl text-white tracking-wide transition-colors hover:text-[#A8DADC]"
+    >
+      {section}
+    </Link>
+  ))}
+</div>
+
     </header>
   );
 };
