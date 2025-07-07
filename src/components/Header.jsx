@@ -98,7 +98,7 @@ after:bg-[#A8DADC] after:transition-all after:duration-500"
         className="hidden fixed top-16 left-0 right-0 bottom-0 bg-black/70 backdrop-blur-md z-40 p-5 md:hidden"
       >
         <nav className="flex flex-col items-center gap-6">
-          {['hero', 'about', 'resume', 'projects', 'contact'].map((section, i) => (
+          {['Home', 'About', 'Resume', 'Projects', 'Contact'].map((section, i) => (
             <Link
               smooth
               to={`/#${section}`}
